@@ -1,0 +1,26 @@
+---
+DatabaseAPI:
+  ribbon:
+    eureka:
+      enabled: false
+  listOfServers: localhost:8001, localhost:8002, localhost:8003
+  ServerListRefreshInterval: 15000
+
+zuul:
+  routes:
+    data:
+      path: /db/**
+      ServiceId: DatabaseAPI
+spring:
+  application:
+    name: zuul-gateway
+  cloud:
+    config:
+      enabled: false
+
+eureka:
+  instance:
+    nonSecurePort: ${server.port:9090}
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.host:localhost}:${eureka.port:8761}/eureka/
