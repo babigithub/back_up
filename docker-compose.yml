@@ -1,23 +1,11 @@
 version: '2'
 services:
-  crud:
-    image: crudoperations
-    depends_on:
-     - eureka-server
-  sumcalc:
-    image: sumcalc
+  echo-service:
+    image: echo-service
     depends_on:
      - eureka-server
   eureka-server:
     image: eureka-server
-    ports:
-     - "8761:8761"
-  hystrix-server:
-    image: sample-hystrix-monitor
-    depends_on:
-     - eureka-server
-     - crud
-     - sumcalc
     ports:
      - "8761:8761"
   zuul-server:
