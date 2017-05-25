@@ -1,5 +1,6 @@
 eureka-server:
     image: eureka-server
+    hostname: eureka-server
     ports:
      - "8761:8761"
 sumcalc:
