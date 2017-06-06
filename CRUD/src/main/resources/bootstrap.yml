@@ -14,4 +14,4 @@ eureka:
     nonSecurePort: ${server.port:8089}
   client:
     serviceUrl:
-      defaultZone: http://eureka-sample.cloudapps-5614.oslab.opentlc.com/eureka/
+      defaultZone: ${eurekahost}/eureka/
