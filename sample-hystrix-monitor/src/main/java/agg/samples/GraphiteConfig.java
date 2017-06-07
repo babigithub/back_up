@@ -1,4 +1,4 @@
-package agg.samples;
+/*package agg.samples;
 
 import com.codahale.metrics.MetricFilter;
 import com.codahale.metrics.MetricRegistry;
@@ -35,4 +35,4 @@ public class GraphiteConfig {
 
 }
 
-}
+}*/
