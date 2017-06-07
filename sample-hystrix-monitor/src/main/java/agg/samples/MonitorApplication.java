@@ -77,6 +77,7 @@ public class MonitorApplication {
     public static void main(String[] args) {
         SpringApplication.run(MonitorApplication.class, args);
     }
+	/*
     @Bean
     public ServletRegistrationBean servletRegistrationBean() {
         return new ServletRegistrationBean(new HystrixMetricsStreamServlet(), "/hystrix.stream");
@@ -104,7 +105,7 @@ public class MonitorApplication {
     GraphiteSender graphite() {
         return new Graphite(new InetSocketAddress("13.76.98.121", 2003));
  
-    }
+    }*/
     
 
 
