@@ -22,7 +22,7 @@ public class CRUDController {
     public String insert() {
 		InsertCommand objInsertCommand = new InsertCommand();
 		objInsertCommand.execute();
-		return "Insert Service Invoked changed............";
+		return "Insert Service Invoked changed123............";
     }
 	
 	@RequestMapping("/update")
