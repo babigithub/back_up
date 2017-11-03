@@ -22,7 +22,7 @@ public class CRUDController {
     public String insert() {
 		InsertCommand objInsertCommand = new InsertCommand();
 		objInsertCommand.execute();
-		return "Insert Service Invoked addwebhook............";
+		return "Insert Service Invoked newcommit............";
     }
 	
 	@RequestMapping("/update")
